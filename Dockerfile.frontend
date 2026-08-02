@@ -1,0 +1,9 @@
+FROM nginx:alpine
+
+# Static HTML/CSS/JS frontend — no build step.
+COPY . /usr/share/nginx/html
+
+# Keep node_modules / backend / docs out of the served root if present.
+RUN rm -rf /usr/share/nginx/html/backend /usr/share/nginx/html/docs
+
+EXPOSE 80

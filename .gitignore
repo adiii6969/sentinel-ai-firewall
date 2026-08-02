@@ -1,0 +1,21 @@
+# Secrets — never commit real credentials
+backend/.env
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Node (if any tooling gets added later)
+node_modules/
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — SENTINEL</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="marketing">
+<div class="auth-shell">
+  <!-- LEFT: brand panel -->
+  <aside class="auth-side">
+    <a href="index.html" class="brand" style="position:relative;z-index:1;">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5.2 3.6 9.6 9 11 5.4-1.4 9-5.8 9-11V6l-9-4Z"/></svg></span>
+      SENTINEL
+    </a>
+    <div class="auth-side-content">
+      <span class="eyebrow">Welcome back</span>
+      <h2>Your agents, still under watch.</h2>
+      <p>Every payment your AI has queued while you were away is logged, scored, and waiting in the firewall. Log in to review what happened.</p>
+      <div class="auth-quote">
+        <p>"Sentinel caught a $4,200 payment to an unverified wallet within 40ms — before our agent ever sent the request."</p>
+        <div class="qwho">— Head of Platform Security, Coreline Bank</div>
+      </div>
+    </div>
+    <div class="trust-badges">
+      <div><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 6v6c0 5.2 3.6 9.6 9 11 5.4-1.4 9-5.8 9-11V6l-9-4Z"/></svg> SOC 2 Type II</div>
+      <div><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Encrypted at rest</div>
+    </div>
+  </aside>
+
+  <!-- RIGHT: form -->
+  <main class="auth-main">
+    <div class="auth-box">
+      <a href="index.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5.2 3.6 9.6 9 11 5.4-1.4 9-5.8 9-11V6l-9-4Z"/></svg></span>SENTINEL</a>
+      <h1>Log in</h1>
+      <p class="auth-sub">Enter your credentials to reach the firewall dashboard.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field-group">
+          <label for="loginId">Username or email</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/><path d="m22 6-10 7L2 6"/></svg>
+            <input type="text" id="loginId" placeholder="you@company.com" required autocomplete="username">
+          </div>
+        </div>
+        <div class="field-group">
+          <label for="loginPw">Password</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <input type="password" id="loginPw" placeholder="••••••••" required autocomplete="current-password">
+            <button type="button" class="toggle-pw" data-target="loginPw" aria-label="Show password">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-row-between">
+          <label class="checkbox-wrap"><input type="checkbox" checked> Remember me</label>
+          <a href="#" class="link-accent" id="forgotLink">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Log in to dashboard</button>
+      </form>
+
+      <div class="divider-or">OR CONTINUE WITH</div>
+      <button type="button" class="btn-google" id="googleLoginBtn">
+        <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.5 5.3 29.6 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21c0-1.2-.1-2.3-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.5 15.6 18.9 13 24 13c3.1 0 5.8 1.1 8 3l6-6C34.5 5.3 29.6 3 24 3c-7.5 0-14 4.2-17.7 10.4z"/><path fill="#4CAF50" d="M24 45c5.5 0 10.4-2.1 14.1-5.6l-6.5-5.5C29.5 35.7 26.9 36.7 24 36.7c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9.9 40.6 16.4 45 24 45z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.2 4.3-4.1 5.9l6.5 5.5C41.4 35.9 45 30.4 45 24c0-1.2-.1-2.3-.4-3.5z"/></svg>
+        Continue with Google
+      </button>
+
+      <p class="auth-foot">Don't have an account? <a href="register.html" class="link-accent">Create one</a></p>
+    </div>
+  </main>
+</div>
+
+<div class="toast-stack" id="toastStack"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/oauth.js"></script>
+<script>
+SentinelOAuth.handleRedirect();
+document.getElementById('loginForm').addEventListener('submit', async function(e){
+  e.preventDefault();
+  const email = document.getElementById('loginId').value.trim();
+  const password = document.getElementById('loginPw').value;
+  const btn = e.target.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  try{
+    const data = await SentinelAPI.login(email, password);
+    SentinelAPI.setSession(data);
+    sessionStorage.setItem('sentinel_username', data.user.full_name || email.split('@')[0]);
+    showToast('success','Signed in','Redirecting to your firewall dashboard…');
+    setTimeout(()=> window.location.href = 'dashboard.html', 700);
+  }catch(err){
+    showToast('danger','Sign in failed', err.message || 'Check your email and password.');
+    btn.disabled = false;
+  }
+});
+document.getElementById('googleLoginBtn').addEventListener('click', function(){
+  SentinelOAuth.signInWithGoogle();
+});
+document.getElementById('forgotLink').addEventListener('click', async function(e){
+  e.preventDefault();
+  const email = document.getElementById('loginId').value.trim();
+  if(!email){ showToast('warning','Enter your email first','Type your email above, then click again.'); return; }
+  try{
+    await SentinelAPI.forgotPassword(email);
+    showToast('info','Reset link sent','Check your inbox for password reset instructions.');
+  }catch(err){
+    showToast('danger','Could not send reset email', err.message);
+  }
+});
+</script>
+</body>
+</html>
