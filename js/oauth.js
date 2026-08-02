@@ -47,7 +47,7 @@ const SentinelOAuth = (() => {
     if (!session) return;
 
     try {
-      const res = await fetch((window.SENTINEL_API_BASE || 'http://localhost:8000/api/v1') + '/auth/oauth-complete', {
+      const res = await fetch((window.SENTINEL_API_BASE || 'https://sentinalfirewall.netlify.app') + '/auth/oauth-complete', {
         method: 'POST',
         headers: { Authorization: 'Bearer ' + session.access_token },
       });
