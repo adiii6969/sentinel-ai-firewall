@@ -32,7 +32,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 for r in (auth, dashboard, firewall, risk, vendors, transactions,
           limits, killswitch, advisor, analytics, audit, notifications,
           agents, wallets):
