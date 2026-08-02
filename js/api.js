@@ -6,7 +6,7 @@
    ============================================================ */
 const SENTINEL_API_BASE =
   window.SENTINEL_API_BASE ||
-  'https://sentinalfirewall.netlify.app/';
+  'https://sentinel-ai-firewall-9bos.onrender.com/api/v1';
 
 const SentinelAPI = (() => {
   function getToken() { return localStorage.getItem('sentinel_token'); }
