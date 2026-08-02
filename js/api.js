@@ -4,7 +4,9 @@
    every page's existing render functions stay untouched; they just
    get real data instead of the hardcoded arrays where wired up.
    ============================================================ */
-const SENTINEL_API_BASE = window.SENTINEL_API_BASE || 'http://localhost:8000/api/v1';
+const SENTINEL_API_BASE =
+  window.SENTINEL_API_BASE ||
+  'https://sentinalfirewall.netlify.app/';
 
 const SentinelAPI = (() => {
   function getToken() { return localStorage.getItem('sentinel_token'); }
